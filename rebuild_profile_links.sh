@@ -13,7 +13,7 @@ PROFILES=`ls -hF ${PROFILES_PATH}  | egrep -v '_/$' | egrep '/$' | sed 's|/$||' 
 PROFILE_TEMPLATE=$(cat <<'END_HEREDOC'
 #!/bin/bash
 
-chrome-profile PROFILE_NAME
+chrome-profile.sh PROFILE_NAME
 END_HEREDOC
 )
 
